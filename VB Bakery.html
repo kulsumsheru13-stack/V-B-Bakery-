@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VB Bakery · Congress buns, honey cake &amp; Dumroot in Bengaluru</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+:root{
+  --bg:#FBEFC4; --ink:#22305A; --paper:#FFF8E1; --accent:#C8321E; --line:#22305A;
+  --muted:#4a5578; color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#17203D;--ink:#FBEFC4;--paper:#1F2A4E;--accent:#F2A93B;--line:#FBEFC4;--muted:#c9c3a6;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#17203D;--ink:#FBEFC4;--paper:#1F2A4E;--accent:#F2A93B;--line:#FBEFC4;--muted:#c9c3a6;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "DM Sans",system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+h1,h2{font-family:"Alfa Slab One",Georgia,serif;font-weight:400;line-height:1.05;margin:0}
+.hero{padding:56px 0 40px;border-bottom:6px double var(--line)}
+.name{font-size:1rem;font-weight:700;letter-spacing:.02em;margin:0 0 28px}
+.hero h1{font-size:clamp(2.8rem,11vw,6.5rem);max-width:11ch}
+.hero p{max-width:34em;font-size:1.15rem;margin:24px 0 28px}
+.status{display:inline-block;border:2px solid var(--line);padding:4px 12px;font-weight:700;margin-bottom:24px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:13px 22px;border:2px solid var(--line);font-weight:700;text-decoration:none;background:var(--ink);color:var(--bg);min-height:48px}
+.btn.alt{background:transparent;color:var(--ink)}
+.btn:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+section{padding:48px 0;border-bottom:2px solid var(--line)}
+h2{font-size:clamp(1.8rem,6vw,2.8rem);margin-bottom:20px}
+.board{background:var(--paper);border:3px solid var(--line);padding:8px 24px}
+.board ul{list-style:none;margin:0;padding:0;columns:2 260px;column-gap:40px}
+.board li{padding:11px 0;border-bottom:1px dotted var(--line);break-inside:avoid;display:flex;justify-content:space-between;gap:12px}
+.fav{color:var(--accent);font-weight:700;font-size:.85rem;white-space:nowrap}
+.note{color:var(--muted);margin-top:14px;font-size:.95rem}
+.score{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:24px}
+.score b{font-family:"Alfa Slab One",Georgia,serif;font-weight:400;font-size:3.4rem;line-height:1}
+blockquote{margin:0 0 18px;padding-left:16px;border-left:5px solid var(--accent);font-size:1.15rem}
+.say{color:var(--muted);max-width:40em}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:10px 24px;margin:0 0 24px}
+dt{font-weight:700}dd{margin:0}
+footer{padding:28px 0 40px;color:var(--muted);font-size:.9rem}
+@media (max-width:520px){dl{grid-template-columns:1fr;gap:2px}dd{margin-bottom:12px}}
+@media (prefers-reduced-motion:no-preference){.hero h1{animation:rise .7s ease-out both}@keyframes rise{from{opacity:0;transform:translateY(14px)}}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+  <p class="name">VB Bakery · Shankarapura, Bengaluru</p>
+  <h1>Bun, butter, jam.</h1>
+  <p>A historic Bengaluru bakery known for its Congress buns, honey cake and Dumroot halwa. Everything is baked the old-school way, and it tastes the same every visit.</p>
+  <div class="status">Opens 6:30 am</div>
+  <div class="btns">
+    <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=VB+Bakery+Sajjan+Rao+Circle+Bengaluru">Get directions</a>
+    <a class="btn alt" href="https://wa.me/919620390345">WhatsApp us</a>
+    <a class="btn alt" href="tel:+919620390345">Call 096203 90345</a>
+  </div>
+</div></header>
+
+<main class="wrap">
+<section id="menu">
+  <h2>What to order</h2>
+  <div class="board">
+    <ul>
+      <li>Bun Butter Jam <span class="fav">Popular</span></li>
+      <li>Congress Bun Butter Masala <span class="fav">Popular</span></li>
+      <li>Khara Bun Congress <span class="fav">Popular</span></li>
+      <li>Honey Cake Slice <span class="fav">Popular</span></li>
+      <li>Apple Cake <span class="fav">Popular</span></li>
+      <li>Special Bun <span class="fav">Popular</span></li>
+      <li>Aloo Bun <span class="fav">Popular</span></li>
+      <li>Veg Puff <span class="fav">Popular</span></li>
+      <li>Dumroot Halwa</li>
+      <li>Rose Honey Cake</li>
+      <li>Japanese Cake</li>
+      <li>Pineapple Cake</li>
+      <li>Cream Cake</li>
+      <li>Masala Bread</li>
+      <li>Peanut Bun</li>
+      <li>Potato Bun</li>
+      <li>Capsicum Bun</li>
+    </ul>
+  </div>
+  <p class="note">Most people spend ₹1–200 per person. Ask at the counter for today’s full range.</p>
+</section>
+
+<section id="reviews">
+  <h2>What people say</h2>
+  <div class="score"><b>4.1</b><span>from 5,183 Google reviews</span></div>
+  <blockquote>“The taste never fails.”</blockquote>
+  <blockquote>“The atmosphere and aura of food street is unmatched.”</blockquote>
+  <p class="say">Reviewers praise the fresh ingredients, the consistent quality, the nostalgic charm and the long opening hours. A few find some items pricey, and service can be slow when it’s busy.</p>
+</section>
+
+<section id="visit">
+  <h2>Visit us</h2>
+  <dl>
+    <dt>Address</dt><dd>20, Sajjan Rao Circle, Vishweshwarapura, Shankarapura, Bengaluru, Karnataka 560004</dd>
+    <dt>Opens</dt><dd>6:30 am</dd>
+    <dt>Phone &amp; WhatsApp</dt><dd><a href="tel:+919620390345">096203 90345</a></dd>
+  </dl>
+  <div class="btns">
+    <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=VB+Bakery+Sajjan+Rao+Circle+Bengaluru">Open in Maps</a>
+    <a class="btn alt" href="https://wa.me/919620390345">Message on WhatsApp</a>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">VB Bakery, Shankarapura, Bengaluru. Rating and menu details are from the business’s Google listing.</div></footer>
+</body>
+</html>
